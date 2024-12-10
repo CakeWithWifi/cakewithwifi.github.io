@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shortened URL</title>
+</head>
+<body>
+    <center>
+    <h1>Ridwik's URL shortener (I still need a domain)</h1>
+    {% if short_url %}
+        <p>Short URL: <a href="{{ short_url }}">{{ short_url }}</a></p>
+    {% endif %}
+    <a href="{{ url_for('home') }}">Shorten Another URL</a>
+    </center>
+</body>
+</html>
